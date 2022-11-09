@@ -1,3 +1,28 @@
+h1{
+    font-family:  'Work Sans', sans-serif;
+    color:#5394A0;
+    font-size: 2em;
+    text-align: center;
+}
 body{
     background-color: #ffecd6;
+    margin: 0px;
+    display: grid;
 }
+aside{
+    background-color: #F9F3EC;
+}
+.notes-taken{
+    list-style: square;
+    font-family:  'Work Sans', sans-serif;
+    color:#5394A0;
+    font-weight: bold;
+}
+nav{
+    font-family:  'Work Sans', sans-serif;
+    color:#5394A0;
+    text-align: right;
+    margin: 10px;
+}
+
+
