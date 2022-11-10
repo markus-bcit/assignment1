@@ -9,6 +9,13 @@ body{
     margin: 0px;
     display: grid;
 }
+main{
+    margin: 10px;
+}
+nav > a{
+    margin: 5px;
+    font-weight: bold;
+}
 aside{
     background-color: #F9F3EC;
 }
@@ -22,7 +29,42 @@ nav{
     font-family:  'Work Sans', sans-serif;
     color:#5394A0;
     text-align: right;
-    margin: 10px;
 }
-
-
+section{
+    display: grid;
+}
+input[type=text]{
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+}
+.top-buttons{
+    display: grid;
+    grid-template-areas: '1 2';
+}
+.button1{
+    background-color: #5394A0;
+    border-radius: 10px;
+    height: 40px;
+    width: 90px;
+}
+p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    font-size: small;
+}
+.button2{
+    background-color: #6F6A87;
+    border-radius: 10px;
+    height: 40px;
+    width: 110px;
+    position: absolute;
+    right: 10px;
+}
+a:link, a:hover, a:visited{
+    text-decoration: none;
+    color: #5394A0;
+}
