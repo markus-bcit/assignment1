@@ -39,6 +39,7 @@ section{
     display: grid;
     grid-template-columns: 1fr;
     margin: 10px 0px 10px 0px;
+    grid-template-areas: '1 2';
 }
 .button1{
     background-color: #5394A0;
@@ -59,7 +60,6 @@ section{
     font-family: 'Work Sans', sans-serif;
     color: white;
     padding: 0px 10px 0px 10px;
-    grid-area: 1 / 2;
 }
 
 a:link, a:visited{
@@ -88,6 +88,7 @@ textarea{
     display: grid;
     margin: 10px 0px 10px 0px;
     grid-template-columns: 1fr;
+    grid-template-areas: '1 2';
     gap: 15px;
 }
 .button3{
@@ -111,5 +112,14 @@ textarea{
     color: white;
     padding: 0px 10px 0px 10px;
     justify-self: end;
-    grid-area: 1 / 2;
+}
+footer{
+    text-align: center;
+}
+h2{
+    font-family:  'Work Sans', sans-serif;
+    color:#5394A0;
+}
+img{
+    width: 50px;
 }
