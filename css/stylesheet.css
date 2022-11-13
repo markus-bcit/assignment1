@@ -11,6 +11,7 @@ body{
 }
 main{
     margin: 10px;
+    display: grid;
 }
 nav > a{
     margin: 5px;
@@ -122,4 +123,10 @@ h2{
 }
 img{
     width: 50px;
+}
+@media screen and (min-width: 600px){
+    html, body{
+        grid-template-areas: '1 2';
+        height: 100%;
+    }
 }
