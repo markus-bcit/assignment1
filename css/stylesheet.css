@@ -1,3 +1,6 @@
+html{
+    height: 100%;
+}
 h1{
     font-family:  'Work Sans', sans-serif;
     color:#5394A0;
@@ -8,6 +11,7 @@ body{
     background-color: #ffecd6;
     margin: 0px;
     display: grid;
+    height: 100%;
 }
 main{
     margin: 10px;
@@ -35,7 +39,6 @@ section{
     display: grid;
     align-content: space-between;
 }
-
 .top-buttons{
     display: grid;
     grid-template-columns: 1fr;
@@ -75,12 +78,16 @@ button:link, button:hover, button:visited{
     text-decoration: none;
     background-color: #5394a083;
 }
+article{
+    height: 100%;
+}
 textarea{
     width: 100%;
     box-sizing:border-box;
     background-color: #F9F3EC;
     border: #5394A0 solid 2px;
     padding: 10px;
+    height: 100%;
 }
 #take-note{
     color: rgb(99, 98, 98);
@@ -125,8 +132,8 @@ img{
     width: 50px;
 }
 @media screen and (min-width: 600px){
-    html, body{
+    body{
         grid-template-areas: '1 2';
-        height: 100%;
+        grid-template-columns: 1fr 4fr;
     }
 }
