@@ -37,16 +37,15 @@ section{
 
 .top-buttons{
     display: grid;
-    grid-template-areas: '1 2';
+    grid-template-columns: 1fr;
     margin: 10px 0px 10px 0px;
 }
 .button1{
     background-color: #5394A0;
     border-radius: 10px;
-    height: fit-content;
     border: 0px;
-    max-width: fit-content;
     line-height: 3;
+    max-width: fit-content;
     font-family: 'Work Sans', sans-serif;
     color: white;
     padding: 0px 10px 0px 10px;
@@ -55,14 +54,12 @@ section{
     background-color: #6F6A87;
     border-radius: 10px;
     border: 0px;
-    max-width: fit-content;
     line-height: 3;
-    position: absolute;
-    right: 10px;
-    display: flex;
+    justify-self: end;
     font-family: 'Work Sans', sans-serif;
     color: white;
     padding: 0px 10px 0px 10px;
+    grid-area: 1 / 2;
 }
 
 a:link, a:visited{
@@ -87,4 +84,32 @@ textarea{
 #take-note{
     color: rgb(99, 98, 98);
 }
-
+.bot-buttons{
+    display: grid;
+    margin: 10px 0px 10px 0px;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+.button3{
+    background-color: #6F6A87;
+    border-radius: 10px;
+    border: 0px;
+    line-height: 3;
+    right: 10px;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    justify-self: end;
+}
+.button4{
+    background-color: #D9827C;
+    border-radius: 10px;
+    border: 0px;
+    line-height: 3;
+    right: 10px;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    justify-self: end;
+    grid-area: 1 / 2;
+}
