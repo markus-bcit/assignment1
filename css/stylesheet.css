@@ -85,9 +85,14 @@ textarea{
     width: 100%;
     box-sizing:border-box;
     background-color: #F9F3EC;
-    border: #5394A0 solid 2px;
     padding: 10px;
     height: 100%;
+    border: none;
+}
+textarea:focus{
+    outline: none;
+    border: 3px solid #5394A0;
+    border-radius: 5px;
 }
 #take-note{
     color: rgb(99, 98, 98);
