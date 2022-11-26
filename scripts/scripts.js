@@ -4,13 +4,7 @@ const button1 = document.querySelector('.button1')
 const button2 = document.querySelector('.button2')
 const button3 = document.querySelector('.button3')
 const button4 = document.querySelector('.button4')
-
-
-// function darkmode(){
-//     document.body.classList.add('asidedark')
-// }
-
-// const buttonContainer = document.querySelector('div.button-container')
+const textarea = document.querySelector('textArea')
 
 
 function togglemode(){
@@ -18,9 +12,17 @@ function togglemode(){
     aside.classList.toggle('asidedark') 
     button1.classList.toggle('buttonDB')
     button2.classList.toggle('buttonDP')
-    button3.classList.toggle('buttonDP')
+    button3.classList.toggle('buttonDB')
     button4.classList.toggle('buttonDR')
+    textarea.classList.toggle('textareaDM')
 }
 
 button2.addEventListener('click', togglemode)
+
+let notes = {title:"note one", body:"this is my first note"}
+
+function addnote(){
+    textarea.value
+}
+
 

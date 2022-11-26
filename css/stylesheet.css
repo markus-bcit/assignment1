@@ -83,16 +83,15 @@ textarea{
     padding: 10px;
     height: 100%;
     border: none;
-    resize: none
+    resize: none;
+    color: rgb(99, 98, 98);
 }
 textarea:focus{
     outline: none;
     border: 3px solid #5394A0;
     border-radius: 5px;
 }
-#take-note{
-    color: rgb(99, 98, 98);
-}
+
 .bot-buttons{
     display: grid;
     margin: 10px 0px 10px 0px;
@@ -101,7 +100,7 @@ textarea:focus{
     gap: 15px;
 }
 .button3{
-    background-color: #6F6A87;
+    background-color: #5394A0;
     border-radius: 10px;
     border: 0px;
     line-height: 3;
@@ -149,6 +148,10 @@ img{
 }
 .buttonDR{
     background-color: #7b241e;
+}
+.textareaDM{
+    background-color: #161616;
+    color: #ffffff;
 }
 
 @media screen and (min-width: 600px){
