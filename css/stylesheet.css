@@ -1,9 +1,9 @@
+
 html{
     height: 100%;
 }
 h1{
     font-family:  'Work Sans', sans-serif;
-    color:#5394A0;
     font-size: 2em;
     text-align: center;
 }
@@ -12,6 +12,7 @@ body{
     margin: 0px;
     display: grid;
     height: 100%;
+    color:#5394A0;
 }
 main{
     margin: 10px;
@@ -27,12 +28,10 @@ aside{
 .notes-taken{
     list-style: square;
     font-family:  'Work Sans', sans-serif;
-    color:#5394A0;
     font-weight: bold;
 }
 nav{
     font-family:  'Work Sans', sans-serif;
-    color:#5394A0;
     text-align: right;
 }
 section{
@@ -66,14 +65,10 @@ section{
     padding: 0px 10px 0px 10px;
 }
 
-a:link, a:visited{
-    text-decoration: none;
-    color: #5394A0;
+a{
+    cursor: pointer;
 }
-a:hover{
-    text-decoration: none;
-    color: #5394a083;
-}
+
 button:link, button:hover, button:visited{
     text-decoration: none;
     background-color: #5394a083;
@@ -88,6 +83,7 @@ textarea{
     padding: 10px;
     height: 100%;
     border: none;
+    resize: none
 }
 textarea:focus{
     outline: none;
@@ -131,11 +127,30 @@ footer{
 }
 h2{
     font-family:  'Work Sans', sans-serif;
-    color:#5394A0;
 }
 img{
     width: 50px;
 }
+.bodydark{
+    background-color: #282d2e;
+    color: #ffffff;
+}
+.asidedark{
+    background-color: #3a4041;
+}
+.lighttext{
+    color: #ffffff;
+}
+.buttonDB{
+    background-color: #1b2697;
+}
+.buttonDP{
+    background-color: #691fbe;
+}
+.buttonDR{
+    background-color: #7b241e;
+}
+
 @media screen and (min-width: 600px){
     body{
         grid-template-areas: '1 2';
