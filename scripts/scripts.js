@@ -26,39 +26,50 @@ function Ehidden(){
     textarea.classList.toggle('hidden')
 }
 function newnote(){
+    if (!button_cancel.classList.contains('hidden')) {
+        cleartextarea();
+    }
     button_save.classList.remove('hidden')
     button_cancel.classList.remove('hidden')
     textarea.classList.remove('hidden')
-    textarea.value = null
+
 }
 button_cancel.addEventListener('click', Ehidden)
 button_new_note.addEventListener('click', newnote)
 
 
-let notesArray = [{title:"note one", body:"this is my first note"}]
+let notesArray = [{title:"note one", body:"this is my first note"},
+                {title:"note two", body:"this is my second note"} ]
 
+function cleartextarea(){
+    textarea.value = null
+}
 
 let input;
+let i = 2; 
 
 function savenote(){
     input = prompt("Enter Title of Note:");
     notesArray.push({title: input, body: textarea.value})
-    textarea.value = null
-    for (let i = 1; i < notesArray.length; i++) {
-        listElement = document.createElement('li')
-        notesList.appendChild(listElement)
-        listElement.textContent = notesArray[i]['title']
-    }
+    cleartextarea()
+    if (i < notesArray.length){
+    listElement = document.createElement('li')
+    notesList.appendChild(listElement)
+    listElement.textContent = notesArray[i]['title']
+    i++;
+}
 }
 
 button_save.addEventListener('click', savenote)
 
+function getnotes(){
+    for (note of notesArray) {
+    if (note.title == event.target.innerText) {
+        document.querySelector("textarea").value = note.body;
+    }
+    }
+};
 
-// for (let x = 0; x < courselist.length; x++) {
-//   if (courselist[x]["code"].includes(input)) {
-//     console.log(
-//       `Yes I am taking the course: ${courselist[x]["code"]} - ${courselist[x]["name"]}`
-//     );
-//   }
-// }
-// console.log(courselist);
+notesList.addEventListener('click', getnotes)
+
+
