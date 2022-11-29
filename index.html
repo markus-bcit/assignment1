@@ -10,44 +10,60 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
       rel="stylesheet"
     />
+    <script defer src="scripts/scripts.js" defer></script>
     <title>Assignment 1</title>
   </head>
   <body>
     <aside>
-      <h1>My Notes</h1>
+      <h1 class="h1">My Notes</h1>
       <ul class="notes-taken">
         <li>note one</li>
         <li>note two</li>
       </ul>
     </aside>
+    <div>
+    <header>
+      <h1 class="h1">Take Better Notes</h1>
+      <nav>
+        <a>About</a>
+        <a>Docs</a>
+      </nav>
+    </header>
     <main>
       <section>
-        <h1>Take Better Notes</h1>
-        <nav>
-          <a href="">About</a>
-          <a href="">Docs</a>
-        </nav>
         <div class="top-buttons">
-          <button class="button1" type="button">New Note</button>
-          <button class="button2" type="button">Dark Theme</button>
+          <button class="button_new_note" type="button">New Note</button>
+          <button class="button_dark_theme" type="button">Dark Theme</button>
         </div>
         <article>
-          <textarea name="Note" id="take-note" cols="30" rows="10">
-This is a place holder</textarea
-          >
+          <textarea
+            name="Note"
+            id="take-note"
+            cols="30"
+            rows="10"
+            placeholder="This is a place holder"
+          ></textarea>
         </article>
         <div class="bot-buttons">
-          <button class="button3" type="button">Save</button>
-          <button class="button4" type="button">Cancel</button>
+          <button class="button_save" type="button">Save</button>
+          <button class="button_cancel" type="button">Cancel</button>
         </div>
       </section>
-      <footer>
-        <h2>Keep in Touch</h2>
-        <a href=""
-          ><img src="images/Internet_Line-02-512.webp" class="foot-img" alt="Internet Line"
-        /></a>
-        <a href=""><img src="images/linkedin_circle_color-512.webp" alt="Linked In Logo"/></a>
-      </footer>
     </main>
+    <footer>
+      <h2>Keep in Touch</h2>
+      <a href=""
+        ><img
+          src="images/Internet_Line-02-512.webp"
+          class="foot-img"
+          alt="Internet Line"
+      /></a>
+      <a href=""
+        ><img
+          src="images/linkedin_circle_color-512.webp"
+          alt="Linked In Logo"
+      /></a>
+    </footer>
+    </div>
   </body>
 </html>
