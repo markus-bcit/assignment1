@@ -19,10 +19,40 @@ function togglemode(){
 
 button2.addEventListener('click', togglemode)
 
-let notes = {title:"note one", body:"this is my first note"}
+function Ehidden(){
+    button3.classList.toggle('hidden')
+    button4.classList.toggle('hidden')
+    textarea.classList.toggle('hidden')
+}
+function newnote(){
+    button3.classList.remove('hidden')
+    button4.classList.remove('hidden')
+    textarea.classList.remove('hidden')
+    textarea.value = null
+}
+button4.addEventListener('click', Ehidden)
+button1.addEventListener('click', newnote)
 
-function addnote(){
-    textarea.value
+
+let notes = [{title:"note one", body:"this is my first note"}]
+
+
+let input;
+
+function savenote(){
+    input = prompt("Enter Title of Note:");
+    notes.push({title: input, body: textarea.value})
+    textarea.value = null
 }
 
+button3.addEventListener('click', savenote)
 
+
+// for (let x = 0; x < courselist.length; x++) {
+//   if (courselist[x]["code"].includes(input)) {
+//     console.log(
+//       `Yes I am taking the course: ${courselist[x]["code"]} - ${courselist[x]["name"]}`
+//     );
+//   }
+// }
+// console.log(courselist);
