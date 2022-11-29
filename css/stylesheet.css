@@ -25,9 +25,6 @@ nav > a{
 aside{
     background-color: #F9F3EC;
 }
-header{
-
-}
 .notes-taken{
     list-style: square;
     font-family:  'Work Sans', sans-serif;
@@ -47,7 +44,16 @@ section{
     margin: 10px 0px 10px 0px;
     grid-template-areas: '1 2';
 }
-.button1{
+.buttonBase{
+    border-radius: 10px;
+    border: 0px;
+    line-height: 3;
+    max-width: fit-content;
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    padding: 0px 10px 0px 10px;
+}
+.button_new_note{
     background-color: #5394A0;
     border-radius: 10px;
     border: 0px;
@@ -57,7 +63,7 @@ section{
     color: white;
     padding: 0px 10px 0px 10px;
 }
-.button2{
+.button_dark_theme{
     background-color: #6F6A87;
     border-radius: 10px;
     border: 0px;
@@ -102,18 +108,17 @@ textarea:focus{
     grid-template-areas: '1 2';
     gap: 15px;
 }
-.button3{
+.button_save{
     background-color: #5394A0;
     border-radius: 10px;
     border: 0px;
     line-height: 3;
-    right: 10px;
     font-family: 'Work Sans', sans-serif;
     color: white;
     padding: 0px 10px 0px 10px;
     justify-self: end;
 }
-.button4{
+.button_cancel{
     background-color: #D9827C;
     border-radius: 10px;
     border: 0px;
