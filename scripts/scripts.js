@@ -16,7 +16,11 @@ function togglemode(){
     button_save.classList.toggle('buttonDB')
     button_cancel.classList.toggle('buttonDR')
     textarea.classList.toggle('textareaDM')
-}
+    if (button_dark_theme.textContent == "Dark Theme"){
+    button_dark_theme.textContent = "Light Theme"}
+    else if (button_dark_theme.textContent == "Light Theme"){
+        button_dark_theme.textContent = "Dark Theme"}
+    }
 
 button_dark_theme.addEventListener('click', togglemode)
 
@@ -71,5 +75,4 @@ function getnotes(){
 };
 
 notesList.addEventListener('click', getnotes)
-
 
